@@ -1,0 +1,55 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: tno-setup-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Setup2no is the Schema for the setup2noes API
+      displayName: Setup2no
+      kind: Setup2no
+      name: setup2nos.setup-2no.2no.io
+      version: v1alpha1
+  description: This Operator perform necessary actions in order to set up a two nodes
+    highly avaliable openshift cluster
+  displayName: 2NO Setup Operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - remediation
+  - auto-healing
+  - recovery
+  - high-availability
+  - baremetal
+  - two nodes
+  - 2no
+  - openshift
+  links:
+  - name: 2No Setup Operator
+    url: https://tno-setup-operator.domain
+  maintainers:
+  - email: tbd@tbd.com
+    name: TBD
+  maturity: alpha
+  provider:
+    name: TBD
+  version: 0.0.0

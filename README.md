@@ -1,2 +1,2 @@
-# 2no-setup-operator
+# tno-setup-operator
 This operator will perform necessary actions which are needed for setting up a two nodes openshift cluster

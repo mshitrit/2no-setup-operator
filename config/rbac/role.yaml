@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - setup-2no.2no.io
+  resources:
+  - setup2noes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - setup-2no.2no.io
+  resources:
+  - setup2noes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - setup-2no.2no.io
+  resources:
+  - setup2noes/status
+  verbs:
+  - get
+  - patch
+  - update

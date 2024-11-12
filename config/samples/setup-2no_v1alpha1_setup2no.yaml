@@ -1,0 +1,12 @@
+apiVersion: setup-2no.2no.io/v1alpha1
+kind: Setup2no
+metadata:
+  labels:
+    app.kubernetes.io/name: setup2no
+    app.kubernetes.io/instance: setup2no-sample
+    app.kubernetes.io/part-of: tno-setup-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: tno-setup-operator
+  name: setup2no-sample
+spec:
+  # TODO(user): Add fields here
